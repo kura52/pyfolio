@@ -85,15 +85,15 @@ def format_asset(asset):
     before displaying.
     """
 
-    try:
-        import zipline.assets
-    except ImportError:
-        return asset
+    # try:
+    #     import zipline.assets
+    # except ImportError:
+    return asset
 
-    if isinstance(asset, zipline.assets.Asset):
-        return asset.symbol
-    else:
-        return asset
+    # if isinstance(asset, zipline.assets.Asset):
+    #     return asset.symbol
+    # else:
+    #     return asset
 
 
 def vectorize(func):
